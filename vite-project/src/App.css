@@ -1,0 +1,89 @@
+body {
+  font-family: monospace;
+  width: 100%;;
+  margin: 0 auto;
+  min-width: 700px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(133, 252, 104);
+  min-width: 678px;
+  height: 80px;
+}
+.social-icons a {
+  margin-right: 15px;
+  
+}
+
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 20px;
+  min-width: 750px;
+}
+.post {
+  width: 100%;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  width: 700px;
+  .submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  input, textarea {
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.557);
+  }
+  button {
+    width: 100px;
+    border: none;
+    background-color: orange;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+  }
+}
+
+.new-post-form input,
+.new-post-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  margin-left: 50px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  color: rgb(96, 96, 96);
+}
+span {
+  font-size: 20px;
+}
