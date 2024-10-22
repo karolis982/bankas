@@ -25,16 +25,25 @@ header {
 }
 
 .posts-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 50px;
   padding: 20px;
   min-width: 750px;
 }
 .post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   width: 100%;
   background-color: #f8f8f8;
   border-radius: 5px;
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
 }
 img {
   width: 100%;
@@ -86,4 +95,7 @@ p {
 }
 span {
   font-size: 20px;
+}
+h2 {
+  margin: 10px;
 }

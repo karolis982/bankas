@@ -23,6 +23,8 @@ const NewPost = () => {
     window.location.reload();
   };
 
+  
+
   return (
     <form onSubmit={handleSubmit} className="new-post-form">
       <input
