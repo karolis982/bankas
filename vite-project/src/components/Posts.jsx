@@ -17,6 +17,11 @@ const Posts = () => {
   };
 
   const handleSave = (index) => {
+    if (newLikutis < 0) {
+      alert("Likutis negali būti mažesnis nei 0");
+      return;
+    }
+    
     const updatedPosts = [...posts];
     updatedPosts[index].likutis = newLikutis;
     setPosts(updatedPosts);
@@ -28,6 +33,12 @@ const Posts = () => {
   const handleCancel = () => {
     setEditingIndex(null);
     setNewLikutis('');
+  };
+
+  const handleDelete = (index) => {
+    const updatedPosts = posts.filter((_, i) => i !== index);
+    setPosts(updatedPosts);
+    localStorage.setItem('posts', JSON.stringify(updatedPosts));
   };
 
   return (
@@ -48,12 +59,16 @@ const Posts = () => {
                 type="number"
                 value={newLikutis}
                 onChange={(e) => setNewLikutis(e.target.value)}
+                min="0"
               />
               <button onClick={() => handleSave(index)}>Išsaugoti</button>
               <button onClick={handleCancel}>Atšaukti</button>
             </div>
           ) : (
-            <button onClick={() => handleEdit(index)}>Redaguoti likutį</button>
+            <div className='mygtukai'>
+              <button onClick={() => handleEdit(index)}>Redaguoti likutį</button>
+              <button onClick={() => handleDelete(index)}>Ištrinti</button>
+            </div>
           )}
         </div>
       ))}

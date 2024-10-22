@@ -4,6 +4,9 @@ body {
   margin: 0 auto;
   min-width: 700px;
 }
+main {
+  background-color: rgba(250, 235, 215, 0.507);
+}
 
 .App {
   display: flex;
@@ -98,4 +101,34 @@ span {
 }
 h2 {
   margin: 10px;
+}
+.mygtukai {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  button {
+    width: 150px;
+    height: 25px;
+    color:blanchedalmond;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+  }
+}
+.edit-likutis {
+  button {
+    margin: 10px;
+    width: 150px;
+    height: 25px;
+    color:blanchedalmond;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+  }
+  input {
+    height: 22px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+  }
 }

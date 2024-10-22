@@ -102,7 +102,7 @@ const NewPost = () => {
         required
       />
       <div className="submit">
-        <button type="submit">Submit</button>
+        <button type="submit">Sukurti</button>
       </div>
     </form>
   );
