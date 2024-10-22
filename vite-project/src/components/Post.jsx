@@ -8,7 +8,7 @@ const Post = ({ vardas, pavarde, iban, id, likutis, nuotrauka }) => {
         <h2>{pavarde}</h2>
         <h2>{iban}</h2>
         <h2>{id}</h2>
-        <h2>{likutis}</h2>
+        <h2>{likutis}€</h2>
       </div>
       <div>
         <img src={nuotrauka} />
