@@ -31,7 +31,7 @@ const NewPost = () => {
     pavarde: '',
     iban: '',
     id: '',
-    likutis: 0, // Nustatome pradinį likutį į 0
+    likutis: 0,
     nuotrauka: ''
   });
 
